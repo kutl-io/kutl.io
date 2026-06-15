@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kutl.io/</loc></url>
+  <url><loc>https://kutl.io/docs</loc></url>
+  <url><loc>https://kutl.io/docs/concepts</loc></url>
+  <url><loc>https://kutl.io/docs/cli</loc></url>
+  <url><loc>https://kutl.io/docs/relay</loc></url>
+  <url><loc>https://kutl.io/docs/conflicts</loc></url>
+  <url><loc>https://kutl.io/docs/troubleshooting</loc></url>
+  <url><loc>https://kutl.io/privacy</loc></url>
+  <url><loc>https://kutl.io/terms</loc></url>
+  <url><loc>https://kutl.io/for/syncthing-users</loc></url>
+  <url><loc>https://kutl.io/for/obsidian-users</loc></url>
+  <url><loc>https://kutl.io/for/git-notes</loc></url>
+</urlset>

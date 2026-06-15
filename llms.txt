@@ -1,0 +1,18 @@
+# kutl
+
+> kutl is a sync protocol for teams of humans and AI agents: it keeps a team
+> coordinated on shared, living documentation. Documents are plain files on
+> disk; concurrent text edits merge via CRDTs instead of forking into conflict
+> copies, and the relay is self-hostable (open source). Name collisions and
+> non-mergeable changes are preserved as conflict copies rather than silently
+> dropped. kutlhub (https://kutlhub.com) is the hosted offering with shared
+> spaces and a web editor.
+
+## Docs
+
+- [Getting started](https://kutl.io/docs): install, join a space, sync a folder
+- [Concepts](https://kutl.io/docs/concepts): spaces, documents, relays, merge model
+- [CLI reference](https://kutl.io/docs/cli): commands, flags, environment variables
+- [Self-hosting a relay](https://kutl.io/docs/relay): Docker/binary relay setup
+- [Conflict behavior](https://kutl.io/docs/conflicts): concurrent edit/rename/delete semantics
+- [Troubleshooting](https://kutl.io/docs/troubleshooting): sync and connectivity diagnosis
