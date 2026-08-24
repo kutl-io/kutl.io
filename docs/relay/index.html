@@ -6,8 +6,37 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Self-Hosting a Relay — kutl docs</title>
     <meta name="description" content="Run your own kutl relay with Docker or a binary, and connect clients to it." />
-    <script type="module" crossorigin src="/assets/index-C_V6h71u.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CdeIZDaI.css">
+    <script>
+      (function () {
+        // kutl.io follows the system; kutlhub's toggle is an app affordance.
+        // No toggle UI, no persisted theme — .dark tracks
+        // prefers-color-scheme directly, before first paint (avoids a
+        // flash of the wrong theme) and for the life of the page (the
+        // change listener catches the OS preference flipping while the
+        // tab stays open). Guarded for environments without matchMedia
+        // (prerendering runs this template through no browser, but the
+        // guard costs nothing and keeps the script inert rather than
+        // throwing if it ever is).
+        if (typeof matchMedia !== 'function') return;
+        var media = matchMedia('(prefers-color-scheme: dark)');
+        var apply = function () {
+          document.documentElement.classList.toggle('dark', media.matches);
+        };
+        apply();
+        // Legacy Safari (<14) has no MediaQueryList.addEventListener,
+        // only the deprecated addListener — feature-checked the same
+        // way as the matchMedia guard above, so the live-follow is lost
+        // gracefully there instead of throwing after `apply()` already
+        // set the correct initial theme.
+        if (typeof media.addEventListener === 'function') {
+          media.addEventListener('change', apply);
+        } else if (typeof media.addListener === 'function') {
+          media.addListener(apply);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BRdV7Ivv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DvbFYbS0.css">
       <link rel="canonical" href="https://kutl.io/docs/relay" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kutl.io/docs/relay" />
