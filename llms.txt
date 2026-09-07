@@ -16,3 +16,5 @@
 - [Self-hosting a relay](https://kutl.io/docs/relay): Docker/binary relay setup
 - [Conflict behavior](https://kutl.io/docs/conflicts): concurrent edit/rename/delete semantics
 - [Troubleshooting](https://kutl.io/docs/troubleshooting): sync and connectivity diagnosis
+- [Performance](https://kutl.io/docs/performance): what a change costs and how it grows with the size of a space; method, limits
+- [Integrity](https://kutl.io/docs/integrity): how convergence is tested; property tests, simulation, scripted scenarios, rate checks
